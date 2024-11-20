@@ -11,11 +11,11 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             List<student>  students = new List<student>();
-            students.Add(new student(1,"hahahah",10));
-            students.Add(new student(2, "hqưdasd", 16));
-            students.Add(new student(3, "dkajsndkas", 30));
-            students.Add(new student(4, "Admin", 40));
-            students.Add(new student(5, "dkmasnkjas", 50));
+            students.Add(new student(1, "hahahah", 16));
+            students.Add(new student(5, "hqưdasd", 30));
+            students.Add(new student(3, "dkajsndkas", 20));
+            students.Add(new student(9, "Admin", 50));
+            students.Add(new student(7, "dkmasnkjas", 40));
             //Câu a
             Console.WriteLine(" Cau a Danh sach hoc sinh:");
             students.ForEach(student => Console.WriteLine(student));
@@ -42,7 +42,7 @@ namespace ConsoleApp1
 
             //Câu f
             var sortStudents = students.OrderBy(s => s.age).ToList();
-            Console.WriteLine("\nCau f Sap xep student tang dan:");
+            Console.WriteLine("\nSap xep student theo tuoi tang dan:");
             sortStudents.ForEach(student => Console.WriteLine( student)); 
             Console.ReadLine();
         }
